@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manga Translator</title>
+    <link rel="stylesheet" href="popup.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="logo">
+                <div class="glow"></div>🤖 
+            </div>
+            <h1>Manga Translator AI</h1>
+            <p class="subtitle">Dịch thuật siêu tốc chuẩn Glassmorphism</p>
+        </div>
+
+        <div class="card">
+            <div class="setting-row">
+                <div class="setting-info">
+                    <span class="setting-title">Ngôn ngữ Truyện</span>
+                    <span class="setting-desc">Tự động nạp Model AI chuẩn</span>
+                </div>
+                <select id="src-lang" class="modern-select">
+                    <option value="en" selected>Tiếng Anh (EN)</option>
+                    <option value="ja">Tiếng Nhật (JA)</option>
+                    <option value="ko">Tiếng Hàn (KO)</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="setting-row">
+                <div class="setting-info">
+                    <span class="setting-title">Bộ nhớ đệm (Cache)</span>
+                    <span class="setting-desc" id="cache-status">Lưu trữ ảnh siêu tốc</span>
+                </div>
+                <button id="btn-clear-cache" class="btn-clear">Dọn dẹp</button>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="setting-row">
+                <div class="setting-info">
+                    <span class="setting-title">Trạng thái hoạt động</span>
+                    <span class="setting-desc" id="status-text">Đang tự động quét & dịch</span>
+                </div>
+                <label class="toggle">
+                    <input type="checkbox" id="toggleSwitch" checked>
+                    <span class="slider round"></span>
+                </label>
+            </div>
+        </div>
+
+        <div class="card footer">
+            <div class="status-indicator">
+                <span class="dot online"></span>
+                Backend Localhost: 8000
+            </div>
+        </div>
+    </div>
+    <script src="popup.js"></script>
+</body>
+</html>

@@ -1,0 +1,8 @@
+easyocr
+opencv-python
+deep-translator
+Pillow
+fastapi
+uvicorn
+python-multipart
+websockets
