@@ -65,7 +65,7 @@ python server.py
 
 ---
 
-## 🔬 Fine-tuning Your Own Masterpiece AI (Phase 6)
+## 🔬 Fine-tuning Your Own Masterpiece AI 
 Want the AI to translate slang just like your favorite fan-sub group? Use the built-in LLM trainer tailored for low-VRAM CPUs:
 1. Open `dataset/manga_vocab.csv` and insert pairs of translations.
 2. Run `python train.py`.
